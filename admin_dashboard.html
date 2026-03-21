@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://img.icons8.com/ios-filled/50/8a2be2/library.png" width="30">
+        LibManage📚
+    </div>
+    <a href="index.html" class="logout">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/logout-rounded.png"/>
+    </a>
+</header>
+
+<h1>Welcome Admin</h1>
+
+<form id="addBookForm">
+    <input type="text" id="bookName" placeholder="Book Name" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+
+    <button type="submit">
+        <img src="https://img.icons8.com/ios-glyphs/20/ffffff/plus-math.png"/> Add Book
+    </button>
+</form>
+
+<h3>Books</h3>
+
+<table id="bookTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
