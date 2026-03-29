@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/library.png" width="30">
+        LibManage📚
+    </div>
+
+    <a href="index.html" class="logout">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/logout-rounded.png"/>
+    </a>
+</header>
+
+<h1>Welcome Member</h1>
+
+<!-- Due Date -->
+<label>Select Due Date:</label>
+<input type="date" id="dueDateInput">
+
+<!-- Search -->
+<input type="text" id="searchInput" placeholder="Search books">
+<button onclick="searchBooks()">Search</button>
+
+<!-- Books Table -->
+<h3>Available Books</h3>
+<table id="memberBookTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<!-- Records Table -->
+<h3>Issued Books</h3>
+<table id="recordTable">
+    <thead>
+        <tr>
+            <th>Book Name</th>
+            <th>Issue Date</th>
+            <th>Due Date</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>

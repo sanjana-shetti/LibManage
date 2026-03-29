@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://img.icons8.com/ios-filled/50/8a2be2/library.png" width="30">
+        LibManage📚
+    </div>
+    <a href="index.html" class="logout">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/logout-rounded.png"/>
+    </a>
+</header>
+
+<div class="signup-container">
+    <h2>Create Account</h2>
+
+    <form id="signupForm">
+        <input type="email" id="signupEmail" placeholder="Enter Gmail" required>
+        <input type="password" id="signupPassword" placeholder="Enter Password" required>
+
+        <button type="submit">
+            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/add-user-group-man-man.png"/> Sign Up
+        </button>
+    </form>
+
+    <p><a href="index.html">Back to Login</a></p>
+    <p id="signupError" style="color:red;"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

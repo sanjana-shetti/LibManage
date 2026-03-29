@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LibManage Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://img.icons8.com/ios-filled/50/8a2be2/library.png" width="30">
+        LibManage📚
+    </div>
+    <a href="index.html" class="logout">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/logout-rounded.png"/>
+    </a>
+</header>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="member">Member</option>
+        </select>
+
+        <input type="email" id="email" placeholder="Enter Gmail" required>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <button type="submit">
+            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/login-rounded-right.png"/> Login
+        </button>
+    </form>
+
+    <p>Don't have an account? <a href="signup.html">Create New Account</a></p>
+    <p id="error" style="color:red;"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
